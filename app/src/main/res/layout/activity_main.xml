@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kendralyndon.pianopractice.MainActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        app:srcCompat="@drawable/white_key"
+        android:id="@+id/highCKey"
+        app:layout_constraintBottom_toTopOf="@+id/bKey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_height="0dp"
+        android:contentDescription="high c key" />
+
+    <ImageView
+        android:layout_width="0dp"
+        app:srcCompat="@drawable/white_key"
+        android:id="@+id/bKey"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highCKey"
+        app:layout_constraintBottom_toTopOf="@+id/aKey"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_height="0dp"
+        android:contentDescription="b key" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/white_key"
+        android:id="@+id/aKey"
+        app:layout_constraintLeft_toLeftOf="@+id/bKey"
+        app:layout_constraintTop_toBottomOf="@+id/bKey"
+        app:layout_constraintBottom_toTopOf="@+id/gKey"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:layout_width="0dp"
+        app:srcCompat="@drawable/white_key"
+        android:id="@+id/gKey"
+        app:layout_constraintLeft_toLeftOf="@+id/aKey"
+        app:layout_constraintTop_toBottomOf="@+id/aKey"
+        app:layout_constraintBottom_toTopOf="@+id/fKey"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="0dp" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/white_key"
+        android:id="@+id/fKey"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintTop_toBottomOf="@+id/gKey"
+        app:layout_constraintBottom_toTopOf="@+id/eKey"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        app:srcCompat="@drawable/white_key"
+        android:id="@+id/eKey"
+        app:layout_constraintTop_toBottomOf="@+id/fKey"
+        app:layout_constraintBottom_toTopOf="@+id/dKey"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="0dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:layout_width="0dp"
+        app:srcCompat="@drawable/white_key"
+        android:id="@+id/dKey"
+        app:layout_constraintTop_toBottomOf="@+id/eKey"
+        app:layout_constraintBottom_toTopOf="@+id/lowCKey"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="0dp" />
+
+    <ImageView
+        app:srcCompat="@drawable/white_key"
+        android:id="@+id/lowCKey"
+        app:layout_constraintTop_toBottomOf="@+id/dKey"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/black_key"
+        android:id="@+id/bFlatKey"
+        app:layout_constraintBottom_toTopOf="@+id/aFlatKey"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        android:layout_width="0dp"
+        app:srcCompat="@drawable/black_key"
+        android:id="@+id/aFlatKey"
+        app:layout_constraintTop_toBottomOf="@+id/bFlatKey"
+        app:layout_constraintBottom_toTopOf="@+id/gFlatKey"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <ImageView
+        android:layout_width="0dp"
+        app:srcCompat="@drawable/black_key"
+        android:id="@+id/gFlatKey"
+        app:layout_constraintTop_toBottomOf="@+id/aFlatKey"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/black_key"
+        android:id="@+id/eFlatKey"
+        app:layout_constraintBottom_toTopOf="@+id/dFlatKey"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/black_key"
+        android:id="@+id/dFlatKey"
+        app:layout_constraintTop_toBottomOf="@+id/eFlatKey"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelineBlackKeyBase"
+        app:layout_constraintGuide_percent="0.6"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="247dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline4"
+        app:layout_constraintGuide_percent="0.1840796"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="111dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline3"
+        app:layout_constraintGuide_percent="0.5737977"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="346dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        app:layout_constraintGuide_percent="0.6865672"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="414dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline1"
+        app:layout_constraintGuide_percent="0.9402985"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="567dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</android.support.constraint.ConstraintLayout>
