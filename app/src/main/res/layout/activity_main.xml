@@ -11,150 +11,161 @@
     <ImageView
         android:layout_width="0dp"
         app:srcCompat="@drawable/white_key"
-        android:id="@+id/highCKey"
-        app:layout_constraintBottom_toTopOf="@+id/bKey"
+        android:id="@+id/c5Key"
+        app:layout_constraintBottom_toTopOf="@+id/b4Key"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         android:layout_height="0dp"
-        android:contentDescription="high c key" />
+        android:contentDescription="@string/c5Key" />
 
     <ImageView
         android:layout_width="0dp"
         app:srcCompat="@drawable/white_key"
-        android:id="@+id/bKey"
+        android:id="@+id/b4Key"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/highCKey"
-        app:layout_constraintBottom_toTopOf="@+id/aKey"
+        app:layout_constraintTop_toBottomOf="@+id/c5Key"
+        app:layout_constraintBottom_toTopOf="@+id/a4Key"
         app:layout_constraintHorizontal_bias="0.0"
         android:layout_height="0dp"
-        android:contentDescription="b key" />
+        android:contentDescription="@string/b4Key" />
 
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:srcCompat="@drawable/white_key"
-        android:id="@+id/aKey"
-        app:layout_constraintLeft_toLeftOf="@+id/bKey"
-        app:layout_constraintTop_toBottomOf="@+id/bKey"
-        app:layout_constraintBottom_toTopOf="@+id/gKey"
-        app:layout_constraintRight_toRightOf="parent" />
-
-    <ImageView
-        android:layout_width="0dp"
-        app:srcCompat="@drawable/white_key"
-        android:id="@+id/gKey"
-        app:layout_constraintLeft_toLeftOf="@+id/aKey"
-        app:layout_constraintTop_toBottomOf="@+id/aKey"
-        app:layout_constraintBottom_toTopOf="@+id/fKey"
+        android:id="@+id/a4Key"
+        app:layout_constraintLeft_toLeftOf="@+id/b4Key"
+        app:layout_constraintTop_toBottomOf="@+id/b4Key"
+        app:layout_constraintBottom_toTopOf="@+id/g4Key"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_height="0dp" />
+        android:contentDescription="@string/a4Key"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        app:srcCompat="@drawable/white_key"
+        android:id="@+id/g4Key"
+        app:layout_constraintLeft_toLeftOf="@+id/a4Key"
+        app:layout_constraintTop_toBottomOf="@+id/a4Key"
+        app:layout_constraintBottom_toTopOf="@+id/f4Key"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="0dp"
+        android:contentDescription="@string/g4Key"/>
 
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:srcCompat="@drawable/white_key"
-        android:id="@+id/fKey"
+        android:id="@+id/f4Key"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintTop_toBottomOf="@+id/gKey"
-        app:layout_constraintBottom_toTopOf="@+id/eKey"/>
+        app:layout_constraintTop_toBottomOf="@+id/g4Key"
+        app:layout_constraintBottom_toTopOf="@+id/e4Key"
+        android:contentDescription="@string/f4Key"/>
 
     <ImageView
         android:layout_width="0dp"
         app:srcCompat="@drawable/white_key"
-        android:id="@+id/eKey"
-        app:layout_constraintTop_toBottomOf="@+id/fKey"
-        app:layout_constraintBottom_toTopOf="@+id/dKey"
+        android:id="@+id/e4Key"
+        app:layout_constraintTop_toBottomOf="@+id/f4Key"
+        app:layout_constraintBottom_toTopOf="@+id/d4Key"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_height="0dp"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="@string/e4Key"/>
 
     <ImageView
         android:layout_width="0dp"
         app:srcCompat="@drawable/white_key"
-        android:id="@+id/dKey"
-        app:layout_constraintTop_toBottomOf="@+id/eKey"
-        app:layout_constraintBottom_toTopOf="@+id/lowCKey"
+        android:id="@+id/d4Key"
+        app:layout_constraintTop_toBottomOf="@+id/e4Key"
+        app:layout_constraintBottom_toTopOf="@+id/c4Key"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_height="0dp" />
+        android:layout_height="0dp"
+        android:contentDescription="@string/d4Key"/>
 
     <ImageView
         app:srcCompat="@drawable/white_key"
-        android:id="@+id/lowCKey"
-        app:layout_constraintTop_toBottomOf="@+id/dKey"
+        android:id="@+id/c4Key"
+        app:layout_constraintTop_toBottomOf="@+id/d4Key"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_width="0dp" />
+        android:layout_width="0dp"
+        android:contentDescription="@string/c4Key"/>
 
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:srcCompat="@drawable/black_key"
-        android:id="@+id/bFlatKey"
-        app:layout_constraintBottom_toTopOf="@+id/aFlatKey"
+        android:id="@+id/bFlat4Key"
+        app:layout_constraintBottom_toTopOf="@+id/aFlat4Key"
         app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4"
         android:layout_marginBottom="12dp"
-        android:layout_marginTop="12dp" />
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/bFlat4Key"/>
 
     <ImageView
         android:layout_width="0dp"
         app:srcCompat="@drawable/black_key"
-        android:id="@+id/aFlatKey"
-        app:layout_constraintTop_toBottomOf="@+id/bFlatKey"
-        app:layout_constraintBottom_toTopOf="@+id/gFlatKey"
+        android:id="@+id/aFlat4Key"
+        app:layout_constraintTop_toBottomOf="@+id/bFlat4Key"
+        app:layout_constraintBottom_toTopOf="@+id/gFlat4Key"
         app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_height="0dp"
         android:layout_marginTop="12dp"
-        android:layout_marginBottom="12dp" />
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/aFlat4Key"/>
 
     <ImageView
         android:layout_width="0dp"
         app:srcCompat="@drawable/black_key"
-        android:id="@+id/gFlatKey"
-        app:layout_constraintTop_toBottomOf="@+id/aFlatKey"
+        android:id="@+id/gFlat4Key"
+        app:layout_constraintTop_toBottomOf="@+id/aFlat4Key"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_height="0dp"
         android:layout_marginBottom="12dp"
-        android:layout_marginTop="12dp" />
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/gFlat4Key"/>
 
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:srcCompat="@drawable/black_key"
-        android:id="@+id/eFlatKey"
-        app:layout_constraintBottom_toTopOf="@+id/dFlatKey"
+        android:id="@+id/eFlat4Key"
+        app:layout_constraintBottom_toTopOf="@+id/dFlat4Key"
         app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
         android:layout_marginBottom="12dp"
-        android:layout_marginTop="12dp" />
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/eFlat4Key"/>
 
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:srcCompat="@drawable/black_key"
-        android:id="@+id/dFlatKey"
-        app:layout_constraintTop_toBottomOf="@+id/eFlatKey"
+        android:id="@+id/dFlat4Key"
+        app:layout_constraintTop_toBottomOf="@+id/eFlat4Key"
         app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/guideline1"
         android:layout_marginBottom="12dp"
-        android:layout_marginTop="12dp" />
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/dFlat4Key"/>
 
     <android.support.constraint.Guideline
         android:layout_width="wrap_content"

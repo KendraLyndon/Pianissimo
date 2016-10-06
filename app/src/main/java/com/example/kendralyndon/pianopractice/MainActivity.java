@@ -2,30 +2,36 @@ package com.example.kendralyndon.pianopractice;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.View;
-import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "MainActivity";
+
+//    SoundPool pianoSounds;
+//    ImageView c4Key;
+//    ImageView c5Key;
+//    int c4;
+    private Pianokey c4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView highCKey =(ImageView)findViewById(R.id.highCKey);
+//        pianoSounds = new SoundPool.Builder().build();
+//        c4Key = (ImageView)findViewById(R.id.c4Key);
+//        c4 = pianoSounds.load(this, R.raw.p040, 1);
 
-        View.OnClickListener myClickListener = new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Log.d(TAG, "onClick: clicked");
-            }
-        };
+//        System.out.println("The integer we are looking for is "+R.id.c4Key);
 
-        highCKey.setOnClickListener(myClickListener);
+        c4 = new Pianokey(this, R.raw.p040, R.id.c4Key);
 
+//        View.OnClickListener myClickListener = new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v){
+//                pianoSounds.play(c4, 1, 1, 1, 0, 1);
+//            }
+//        };
+
+//        c4Key.setOnClickListener(myClickListener);
     }
-
 }

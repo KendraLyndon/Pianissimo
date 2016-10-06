@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">PianoPractice</string>
+    <string name="app_name">Pianissimo</string>
+    <string name="c4Key">c4Key</string>
+    <string name="dFlat4Key">dFlat4Key</string>
+    <string name="d4Key">d4Key</string>
+    <string name="eFlat4Key">eFlat4Key</string>
+    <string name="e4Key">Pianissimo</string>
+    <string name="f4Key">f4Key</string>
+    <string name="gFlat4Key">gFlat4Key</string>
+    <string name="g4Key">g4Key</string>
+    <string name="aFlat4Key">aFlat4Key</string>
+    <string name="a4Key">a4Key</string>
+    <string name="bFlat4Key">bFlat4Key</string>
+    <string name="b4Key">b4Key</string>
+    <string name="c5Key">c5Key</string>
 </resources>
