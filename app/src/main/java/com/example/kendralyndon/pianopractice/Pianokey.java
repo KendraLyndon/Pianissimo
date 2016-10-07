@@ -4,6 +4,7 @@ package com.example.kendralyndon.pianopractice;
  * Created by kendralyndon on 10/6/16.
  */
 
+import android.app.Activity;
 import android.content.Context;
 import android.media.SoundPool;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import android.widget.ImageView;
 
 public class Pianokey extends AppCompatActivity{
 
+    public Activity activity;
     private int mySoundId;
     private int myviewid;
     private ImageView myKey;
@@ -24,15 +26,15 @@ public class Pianokey extends AppCompatActivity{
 
     }
 
-    public Pianokey(Context context, int soundId, int viewid ) {
+    public Pianokey(Activity a, Context context, int soundId, int viewid ) {
+
+        this.activity = a;
         mySoundId = soundId;
         myviewid = viewid;
         pianoSounds = new SoundPool.Builder().build();
-        System.out.println("do we have a view ??");
-        System.out.println(findViewById(myviewid));
-
-        myKey = (ImageView)findViewById(myviewid);
+        myKey = (ImageView)this.activity.findViewById(myviewid);
         soundClip = pianoSounds.load(context, mySoundId, 1);
+
         myClickListener = new View.OnClickListener(){
             @Override
             public void onClick(View v){
