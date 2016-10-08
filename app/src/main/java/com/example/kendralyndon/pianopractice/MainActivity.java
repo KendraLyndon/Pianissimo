@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        int[] soundfiles = {R.raw.c4, R.raw.c_sharp4,R.raw.d4,R.raw.d_sharp4,R.raw.e4,
+        int[] soundfiles = {R.raw.note40, R.raw.c_sharp4,R.raw.d4,R.raw.d_sharp4,R.raw.e4,
                 R.raw.f4,R.raw.f_sharp4,R.raw.g4,R.raw.g_sharp4,R.raw.a4,R.raw.a_sharp4,
                 R.raw.b4};
         int[] viewids = {R.id.c4Key,R.id.cSharp4Key,R.id.d4Key,R.id.dSharp4Key,R.id.e4Key,
