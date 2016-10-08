@@ -1,216 +1,430 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:fillViewport="false"
     tools:context="com.example.kendralyndon.pianopractice.MainActivity">
 
-    <ImageView
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/octave4"
+            android:layout_width="0dp"
+            android:layout_height="530dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                app:srcCompat="@drawable/white_key"
+                android:id="@+id/b4Key"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/a4Key"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_height="0dp"
+                android:contentDescription="@string/b4Key" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:srcCompat="@drawable/white_key"
+                android:id="@+id/a4Key"
+                app:layout_constraintLeft_toLeftOf="@+id/b4Key"
+                app:layout_constraintTop_toBottomOf="@+id/b4Key"
+                app:layout_constraintBottom_toTopOf="@+id/g4Key"
+                app:layout_constraintRight_toRightOf="parent"
+                android:contentDescription="@string/a4Key"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                app:srcCompat="@drawable/white_key"
+                android:id="@+id/g4Key"
+                app:layout_constraintLeft_toLeftOf="@+id/a4Key"
+                app:layout_constraintTop_toBottomOf="@+id/a4Key"
+                app:layout_constraintBottom_toTopOf="@+id/f4Key"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_height="0dp"
+                android:contentDescription="@string/g4Key"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:srcCompat="@drawable/white_key"
+                android:id="@+id/f4Key"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_bias="0.55"
+                app:layout_constraintTop_toBottomOf="@+id/g4Key"
+                app:layout_constraintBottom_toTopOf="@+id/e4Key"
+                android:contentDescription="@string/f4Key"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                app:srcCompat="@drawable/white_key"
+                android:id="@+id/e4Key"
+                app:layout_constraintTop_toBottomOf="@+id/f4Key"
+                app:layout_constraintBottom_toTopOf="@+id/d4Key"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_height="0dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.0"
+                android:contentDescription="@string/e4Key"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                app:srcCompat="@drawable/white_key"
+                android:id="@+id/d4Key"
+                app:layout_constraintTop_toBottomOf="@+id/e4Key"
+                app:layout_constraintBottom_toTopOf="@+id/c4Key"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_height="0dp"
+                android:contentDescription="@string/d4Key"/>
+
+            <ImageView
+                app:srcCompat="@drawable/white_key"
+                android:id="@+id/c4Key"
+                app:layout_constraintTop_toBottomOf="@+id/d4Key"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="0dp"
+                android:contentDescription="@string/c4Key"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:srcCompat="@drawable/black_key"
+                android:id="@+id/aSharp4Key"
+                app:layout_constraintBottom_toTopOf="@+id/gSharp4Key"
+                app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline8"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:contentDescription="@string/bFlat4Key"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                app:srcCompat="@drawable/black_key"
+                android:id="@+id/gSharp4Key"
+                app:layout_constraintTop_toBottomOf="@+id/aSharp4Key"
+                app:layout_constraintBottom_toTopOf="@+id/fSharp4Key"
+                app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:contentDescription="@string/aFlat4Key"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                app:srcCompat="@drawable/black_key"
+                android:id="@+id/fSharp4Key"
+                app:layout_constraintTop_toBottomOf="@+id/gSharp4Key"
+                app:layout_constraintBottom_toTopOf="@+id/guideline7"
+                app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:contentDescription="@string/gFlat4Key"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:srcCompat="@drawable/black_key"
+                android:id="@+id/dSharp4Key"
+                app:layout_constraintBottom_toTopOf="@+id/cSharp4Key"
+                app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline6"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:contentDescription="@string/eFlat4Key"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:srcCompat="@drawable/black_key"
+                android:id="@+id/cSharp4Key"
+                app:layout_constraintTop_toBottomOf="@+id/dSharp4Key"
+                app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/guideline5"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:contentDescription="@string/dFlat4Key"/>
+
+            <android.support.constraint.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guidelineBlackKeyBase4"
+                app:layout_constraintGuide_percent="0.6"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="247dp" />
+
+            <android.support.constraint.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline8"
+                app:layout_constraintGuide_percent="0.07"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteY="112dp"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <android.support.constraint.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline7"
+                app:layout_constraintGuide_percent="0.49"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteY="350dp"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <android.support.constraint.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline6"
+                app:layout_constraintGuide_percent="0.64"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteY="419dp"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <android.support.constraint.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline5"
+                app:layout_constraintGuide_percent="0.93"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteY="574dp"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/octave1"
+        android:layout_width="0dp"
+        android:layout_height="530dp"
+        app:layout_constraintTop_toBottomOf="@+id/octave4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <ImageView
         android:layout_width="0dp"
         app:srcCompat="@drawable/white_key"
-        android:id="@+id/c5Key"
-        app:layout_constraintBottom_toTopOf="@+id/b4Key"
+        android:id="@+id/key15"
+        app:layout_constraintBottom_toTopOf="@+id/key13"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         android:layout_height="0dp"
-        android:contentDescription="@string/c5Key" />
+        android:contentDescription="b1Key" />
 
-    <ImageView
+        <ImageView
         android:layout_width="0dp"
         app:srcCompat="@drawable/white_key"
-        android:id="@+id/b4Key"
+        android:id="@+id/key13"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/c5Key"
-        app:layout_constraintBottom_toTopOf="@+id/a4Key"
+        app:layout_constraintTop_toBottomOf="@+id/key15"
+        app:layout_constraintBottom_toTopOf="@+id/key11"
         app:layout_constraintHorizontal_bias="0.0"
         android:layout_height="0dp"
-        android:contentDescription="@string/b4Key" />
+        android:contentDescription="a1key" />
 
-    <ImageView
+        <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:srcCompat="@drawable/white_key"
-        android:id="@+id/a4Key"
-        app:layout_constraintLeft_toLeftOf="@+id/b4Key"
-        app:layout_constraintTop_toBottomOf="@+id/b4Key"
-        app:layout_constraintBottom_toTopOf="@+id/g4Key"
+        android:id="@+id/key11"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/key13"
+        app:layout_constraintBottom_toTopOf="@+id/key09"
         app:layout_constraintRight_toRightOf="parent"
-        android:contentDescription="@string/a4Key"/>
+        android:contentDescription="g1Key"/>
 
-    <ImageView
+        <ImageView
         android:layout_width="0dp"
         app:srcCompat="@drawable/white_key"
-        android:id="@+id/g4Key"
-        app:layout_constraintLeft_toLeftOf="@+id/a4Key"
-        app:layout_constraintTop_toBottomOf="@+id/a4Key"
-        app:layout_constraintBottom_toTopOf="@+id/f4Key"
+        android:id="@+id/key09"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/key11"
+        app:layout_constraintBottom_toTopOf="@+id/key08"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_height="0dp"
-        android:contentDescription="@string/g4Key"/>
+        android:contentDescription="f1Key"/>
 
-    <ImageView
+        <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:srcCompat="@drawable/white_key"
-        android:id="@+id/f4Key"
+        android:id="@+id/key08"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintTop_toBottomOf="@+id/g4Key"
-        app:layout_constraintBottom_toTopOf="@+id/e4Key"
-        android:contentDescription="@string/f4Key"/>
+        app:layout_constraintTop_toBottomOf="@+id/key09"
+        app:layout_constraintBottom_toTopOf="@+id/key06"
+        android:contentDescription="e1Key"/>
 
-    <ImageView
+        <ImageView
         android:layout_width="0dp"
         app:srcCompat="@drawable/white_key"
-        android:id="@+id/e4Key"
-        app:layout_constraintTop_toBottomOf="@+id/f4Key"
-        app:layout_constraintBottom_toTopOf="@+id/d4Key"
+        android:id="@+id/key06"
+        app:layout_constraintTop_toBottomOf="@+id/key08"
+        app:layout_constraintBottom_toTopOf="@+id/key04"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_height="0dp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintVertical_bias="0.0"
-        android:contentDescription="@string/e4Key"/>
+        android:contentDescription="d1Key"/>
 
-    <ImageView
+        <ImageView
         android:layout_width="0dp"
         app:srcCompat="@drawable/white_key"
-        android:id="@+id/d4Key"
-        app:layout_constraintTop_toBottomOf="@+id/e4Key"
-        app:layout_constraintBottom_toTopOf="@+id/c4Key"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_height="0dp"
-        android:contentDescription="@string/d4Key"/>
-
-    <ImageView
-        app:srcCompat="@drawable/white_key"
-        android:id="@+id/c4Key"
-        app:layout_constraintTop_toBottomOf="@+id/d4Key"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        android:layout_height="0dp"
+        android:id="@+id/key04"
+        app:layout_constraintTop_toBottomOf="@+id/key06"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_width="0dp"
-        android:contentDescription="@string/c4Key"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="0dp"
+        android:contentDescription="c1Key"/>
 
-    <ImageView
+        <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:srcCompat="@drawable/black_key"
-        android:id="@+id/aSharp4Key"
-        app:layout_constraintBottom_toTopOf="@+id/gSharp4Key"
-        app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase"
+        android:id="@+id/key14"
+        app:layout_constraintBottom_toTopOf="@+id/key12"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4"
         android:layout_marginBottom="12dp"
         android:layout_marginTop="12dp"
-        android:contentDescription="@string/bFlat4Key"/>
+        android:contentDescription="aSharp1Key"/>
 
-    <ImageView
+        <ImageView
         android:layout_width="0dp"
         app:srcCompat="@drawable/black_key"
-        android:id="@+id/gSharp4Key"
-        app:layout_constraintTop_toBottomOf="@+id/aSharp4Key"
-        app:layout_constraintBottom_toTopOf="@+id/fSharp4Key"
-        app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase"
+        android:id="@+id/key12"
+        app:layout_constraintTop_toBottomOf="@+id/key14"
+        app:layout_constraintBottom_toTopOf="@+id/key10"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase1"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_height="0dp"
         android:layout_marginTop="12dp"
         android:layout_marginBottom="12dp"
-        android:contentDescription="@string/aFlat4Key"/>
+        android:contentDescription="gSharp1Key"/>
 
-    <ImageView
+        <ImageView
         android:layout_width="0dp"
         app:srcCompat="@drawable/black_key"
-        android:id="@+id/fSharp4Key"
-        app:layout_constraintTop_toBottomOf="@+id/gSharp4Key"
+        android:id="@+id/key10"
+        app:layout_constraintTop_toBottomOf="@+id/key12"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
-        app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase1"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_height="0dp"
         android:layout_marginBottom="12dp"
         android:layout_marginTop="12dp"
-        android:contentDescription="@string/gFlat4Key"/>
+        android:contentDescription="fsharp1Key"/>
 
-    <ImageView
+        <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:srcCompat="@drawable/black_key"
-        android:id="@+id/dSharp4Key"
-        app:layout_constraintBottom_toTopOf="@+id/cSharp4Key"
-        app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase"
+        android:id="@+id/key07"
+        app:layout_constraintBottom_toTopOf="@+id/key05"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
         android:layout_marginBottom="12dp"
         android:layout_marginTop="12dp"
-        android:contentDescription="@string/eFlat4Key"/>
+        android:contentDescription="dSharp1Key"/>
 
-    <ImageView
+        <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:srcCompat="@drawable/black_key"
-        android:id="@+id/cSharp4Key"
-        app:layout_constraintTop_toBottomOf="@+id/dSharp4Key"
-        app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase"
+        android:id="@+id/key05"
+        app:layout_constraintTop_toBottomOf="@+id/key07"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/guideline1"
         android:layout_marginBottom="12dp"
         android:layout_marginTop="12dp"
-        android:contentDescription="@string/dFlat4Key"/>
+        android:contentDescription="cSharp1Key"/>
 
-    <android.support.constraint.Guideline
+        <android.support.constraint.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/guidelineBlackKeyBase"
+        android:id="@+id/guidelineBlackKeyBase1"
         app:layout_constraintGuide_percent="0.6"
         android:orientation="vertical"
         tools:layout_editor_absoluteY="0dp"
         tools:layout_editor_absoluteX="247dp" />
 
-    <android.support.constraint.Guideline
+        <android.support.constraint.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/guideline4"
-        app:layout_constraintGuide_percent="0.1840796"
+        app:layout_constraintGuide_percent="0.07"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteY="111dp"
+        tools:layout_editor_absoluteY="112dp"
         tools:layout_editor_absoluteX="0dp" />
 
-    <android.support.constraint.Guideline
+        <android.support.constraint.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/guideline3"
-        app:layout_constraintGuide_percent="0.5737977"
+        app:layout_constraintGuide_percent="0.49"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteY="346dp"
+        tools:layout_editor_absoluteY="350dp"
         tools:layout_editor_absoluteX="0dp" />
 
-    <android.support.constraint.Guideline
+        <android.support.constraint.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/guideline2"
-        app:layout_constraintGuide_percent="0.6865672"
+        app:layout_constraintGuide_percent="0.64"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteY="414dp"
+        tools:layout_editor_absoluteY="419dp"
         tools:layout_editor_absoluteX="0dp" />
 
-    <android.support.constraint.Guideline
+        <android.support.constraint.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/guideline1"
-        app:layout_constraintGuide_percent="0.9402985"
+        app:layout_constraintGuide_percent="0.93"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteY="567dp"
+        tools:layout_editor_absoluteY="574dp"
         tools:layout_editor_absoluteX="0dp" />
 
+        </android.support.constraint.ConstraintLayout>
 
-</android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

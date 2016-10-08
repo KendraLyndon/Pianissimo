@@ -13,4 +13,7 @@
     <string name="bFlat4Key">bFlat4Key</string>
     <string name="b4Key">b4Key</string>
     <string name="c5Key">c5Key</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
