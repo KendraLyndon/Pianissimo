@@ -734,7 +734,7 @@
                 android:contentDescription="@string/d4Key"/>
 
             <ImageView
-                app:srcCompat="@drawable/white_key"
+                app:srcCompat="@drawable/blue_key"
                 android:id="@+id/c4Key"
                 app:layout_constraintTop_toBottomOf="@+id/d4Key"
                 app:layout_constraintRight_toRightOf="parent"
