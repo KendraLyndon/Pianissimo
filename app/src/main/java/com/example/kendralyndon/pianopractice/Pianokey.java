@@ -21,32 +21,38 @@ public class Pianokey extends AppCompatActivity{
     private int soundClip;
     private SoundPool pianoSounds;
     private View.OnTouchListener myTouchListener;
+    private View.OnClickListener myClickListener;
+//    private MediaPlayer mp;
 
     // empty constructor
     public Pianokey(){
 
     }
 
-    public Pianokey(Activity a, Context context, int soundId, int viewid ) {
+    public Pianokey(Activity a, final Context context, int soundId, int viewid ) {
 
         this.activity = a;
         mySoundId = soundId;
         myviewid = viewid;
         pianoSounds = new SoundPool.Builder().build();
-        myKey = (ImageView)this.activity.findViewById(myviewid);
         soundClip = pianoSounds.load(context, mySoundId, 1);
+        myKey = (ImageView)this.activity.findViewById(myviewid);
 
         myTouchListener = new View.OnTouchListener(){
             @Override
             public boolean onTouch(View v, MotionEvent e){
+
                 System.out.println(e);
-//                switch(e.getAction() & MotionEvent.ACTION_MASK)
-//                {
-                if(event.getAction() == MotionEvent.ACTION_DOWN){
+
+                if(e.getAction() == MotionEvent.ACTION_DOWN){
+
                     pianoSounds.play(soundClip, 1, 1, 1, 0, 1);
-//                } else if (event.getAction() == MotionEvent.ACTION_UP){
-//                    pianoSounds.stop(soundClip);
-//                }
+                }
+                if (e.getAction() == MotionEvent.ACTION_UP){
+
+                    pianoSounds.stop(soundClip);
+                }
+
                 return true;
             }
         };
