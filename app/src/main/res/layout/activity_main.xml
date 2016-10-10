@@ -142,7 +142,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase7"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guidelineOct7_4"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
                 android:contentDescription="aSharp7Key"/>
 
@@ -155,7 +155,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase7"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_height="0dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="13dp"
                 android:layout_marginBottom="12dp"
                 android:contentDescription="gSharp7Key"/>
 
@@ -169,7 +169,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_height="0dp"
                 android:layout_marginBottom="13dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="13dp"
                 android:contentDescription="fsharp7Key"/>
 
             <ImageView
@@ -181,7 +181,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase7"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guidelineOct7_2"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
                 android:contentDescription="dSharp7Key"/>
 
@@ -194,7 +194,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase7"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/guidelineOct7_1"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
                 android:contentDescription="cSharp7Key"/>
 
@@ -346,7 +346,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase6"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guidelineOct6_4"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
                 android:contentDescription="aSharp6Key"/>
 
@@ -359,8 +359,8 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase6"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_height="0dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
                 android:contentDescription="gSharp6Key"/>
 
             <ImageView
@@ -373,7 +373,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_height="0dp"
                 android:layout_marginBottom="13dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="13dp"
                 android:contentDescription="fsharp6Key"/>
 
             <ImageView
@@ -385,7 +385,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase6"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guidelineOct6_2"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
                 android:contentDescription="dSharp6Key"/>
 
@@ -398,7 +398,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase6"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/guidelineOct6_1"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
                 android:contentDescription="cSharp6Key"/>
 
@@ -550,7 +550,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase5"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guidelineOct5_4"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
                 android:contentDescription="aSharp5Key"/>
 
@@ -563,8 +563,8 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase5"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_height="0dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
                 android:contentDescription="gSharp5Key"/>
 
             <ImageView
@@ -577,7 +577,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_height="0dp"
                 android:layout_marginBottom="13dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="13dp"
                 android:contentDescription="fsharp5Key"/>
 
             <ImageView
@@ -589,7 +589,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase5"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guidelineOct5_2"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
                 android:contentDescription="dSharp5Key"/>
 
@@ -602,7 +602,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase5"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/guidelineOct5_1"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
                 android:contentDescription="cSharp5Key"/>
 
@@ -673,7 +673,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/key49"
                 app:layout_constraintHorizontal_bias="0.0"
                 android:layout_height="0dp"
-                android:contentDescription="@string/b4Key" />
+                android:contentDescription="b4Key" />
 
             <ImageView
                 android:layout_width="0dp"
@@ -684,7 +684,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/key51"
                 app:layout_constraintBottom_toTopOf="@+id/key47"
                 app:layout_constraintRight_toRightOf="parent"
-                android:contentDescription="@string/a4Key"/>
+                android:contentDescription="a4Key"/>
 
             <ImageView
                 android:layout_width="0dp"
@@ -695,7 +695,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/key45"
                 app:layout_constraintRight_toRightOf="parent"
                 android:layout_height="0dp"
-                android:contentDescription="@string/g4Key"/>
+                android:contentDescription="g4Key"/>
 
             <ImageView
                 android:layout_width="0dp"
@@ -707,7 +707,7 @@
                 app:layout_constraintHorizontal_bias="0.55"
                 app:layout_constraintTop_toBottomOf="@+id/key47"
                 app:layout_constraintBottom_toTopOf="@+id/key44"
-                android:contentDescription="@string/f4Key"/>
+                android:contentDescription="f4Key"/>
 
             <ImageView
                 android:layout_width="0dp"
@@ -720,7 +720,7 @@
                 android:layout_height="0dp"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintVertical_bias="0.0"
-                android:contentDescription="@string/e4Key"/>
+                android:contentDescription="e4Key"/>
 
             <ImageView
                 android:layout_width="0dp"
@@ -731,7 +731,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_height="0dp"
-                android:contentDescription="@string/d4Key"/>
+                android:contentDescription="d4Key"/>
 
             <ImageView
                 app:srcCompat="@drawable/blue_key"
@@ -743,7 +743,7 @@
                 android:layout_height="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_width="0dp"
-                android:contentDescription="@string/c4Key"/>
+                android:contentDescription="c4Key"/>
 
             <ImageView
                 android:layout_width="0dp"
@@ -754,9 +754,9 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase4"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guidelineOct4_4"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
-                android:contentDescription="@string/bFlat4Key"/>
+                android:contentDescription="aSharp4Key"/>
 
             <ImageView
                 android:layout_width="0dp"
@@ -768,8 +768,8 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_height="0dp"
                 android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
-                android:contentDescription="@string/aFlat4Key"/>
+                android:layout_marginBottom="13dp"
+                android:contentDescription="gSharp4Key"/>
 
             <ImageView
                 android:layout_width="0dp"
@@ -781,8 +781,8 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_height="0dp"
                 android:layout_marginBottom="13dp"
-                android:layout_marginTop="12dp"
-                android:contentDescription="@string/gFlat4Key"/>
+                android:layout_marginTop="13dp"
+                android:contentDescription="fSharp4Key"/>
 
             <ImageView
                 android:layout_width="0dp"
@@ -793,9 +793,9 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase4"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guidelineOct4_2"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
-                android:contentDescription="@string/eFlat4Key"/>
+                android:contentDescription="dSharp4Key"/>
 
             <ImageView
                 android:layout_width="0dp"
@@ -807,8 +807,8 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/guidelineOct4_1"
                 android:layout_marginBottom="13dp"
-                android:layout_marginTop="12dp"
-                android:contentDescription="@string/dFlat4Key"/>
+                android:layout_marginTop="13dp"
+                android:contentDescription="cSharp4Key"/>
 
             <android.support.constraint.Guideline
                 android:layout_width="wrap_content"
@@ -958,7 +958,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase3"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guidelineOct3_4"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
                 android:contentDescription="aSharp3Key"/>
 
@@ -971,8 +971,8 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase3"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_height="0dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
                 android:contentDescription="gSharp3Key"/>
 
             <ImageView
@@ -985,7 +985,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_height="0dp"
                 android:layout_marginBottom="13dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="13dp"
                 android:contentDescription="fsharp3Key"/>
 
             <ImageView
@@ -997,7 +997,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase3"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guidelineOct3_2"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
                 android:contentDescription="dSharp3Key"/>
 
@@ -1010,7 +1010,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase3"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/guidelineOct3_1"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
                 android:contentDescription="cSharp3Key"/>
 
@@ -1162,7 +1162,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase2"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guidelineOct2_4"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
                 android:contentDescription="aSharp2Key"/>
 
@@ -1175,8 +1175,8 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase2"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_height="0dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
                 android:contentDescription="gSharp2Key"/>
 
             <ImageView
@@ -1189,7 +1189,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_height="0dp"
                 android:layout_marginBottom="13dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="13dp"
                 android:contentDescription="fsharp2Key"/>
 
             <ImageView
@@ -1201,7 +1201,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase2"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guidelineOct2_2"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
                 android:contentDescription="dSharp2Key"/>
 
@@ -1214,7 +1214,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase2"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/guidelineOct2_1"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
                 android:contentDescription="cSharp2Key"/>
 
@@ -1367,7 +1367,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guidelineOct1_4"
             android:layout_marginBottom="13dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="13dp"
             android:contentDescription="aSharp1Key"/>
 
             <ImageView
@@ -1392,7 +1392,7 @@
             app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase1"
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_height="0dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="13dp"
             android:layout_marginTop="13dp"
             android:contentDescription="fsharp1Key"/>
 
@@ -1406,7 +1406,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guidelineOct1_2"
             android:layout_marginBottom="13dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="13dp"
             android:contentDescription="dSharp1Key"/>
 
             <ImageView
@@ -1418,7 +1418,7 @@
             app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase1"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/guidelineOct1_1"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="13dp"
             android:layout_marginTop="13dp"
             android:contentDescription="cSharp1Key"/>
 
@@ -1510,9 +1510,9 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/guidelineOct0_1"
-                android:layout_marginBottom="12dp"
-                android:layout_marginTop="12dp"
-                android:contentDescription="@string/dFlat4Key"
+                android:layout_marginBottom="13dp"
+                android:layout_marginTop="13dp"
+                android:contentDescription="aSharp0Key"
                 app:layout_constraintTop_toTopOf="@+id/guidelineOct0_2" />
 
             <android.support.constraint.Guideline

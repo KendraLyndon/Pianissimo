@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="Start Playing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="167dp"
+        android:id="@+id/launchButton"
+        android:background="#03FF98"
+        android:padding="10dp"
+        android:fontFamily="cursive"
+        android:textAllCaps="false"
+        android:textSize="25sp" />
+
+    <TextView
+        android:text="Pianissimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:fontFamily="cursive"
+        android:textSize="80sp"
+        android:layout_above="@+id/launchButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="142dp" />
+</RelativeLayout>
