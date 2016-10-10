@@ -15,27 +15,27 @@ import android.widget.ImageView;
 public class Pianokey extends AppCompatActivity{
 
     public Activity activity;
+    private SoundPool myPianoSounds;
     private int mySoundId;
+    private int myStreamId;
     private int myviewid;
     private ImageView myKey;
     private int soundClip;
-    private SoundPool pianoSounds;
     private View.OnTouchListener myTouchListener;
-    private View.OnClickListener myClickListener;
-//    private MediaPlayer mp;
+
 
     // empty constructor
     public Pianokey(){
 
     }
 
-    public Pianokey(Activity a, final Context context, int soundId, int viewid ) {
+    public Pianokey(Activity a, final Context context, int soundId, int viewid, SoundPool pianoSounds) {
 
         this.activity = a;
         mySoundId = soundId;
         myviewid = viewid;
-        pianoSounds = new SoundPool.Builder().build();
-        soundClip = pianoSounds.load(context, mySoundId, 1);
+        myPianoSounds = pianoSounds;
+        soundClip = myPianoSounds.load(context, mySoundId, 1);
         myKey = (ImageView)this.activity.findViewById(myviewid);
 
         myTouchListener = new View.OnTouchListener(){
@@ -46,11 +46,19 @@ public class Pianokey extends AppCompatActivity{
 
                 if(e.getAction() == MotionEvent.ACTION_DOWN){
 
-                    pianoSounds.play(soundClip, 1, 1, 1, 0, 1);
+                    myStreamId = myPianoSounds.play(soundClip, 1, 1, 1, 0, 1);
+
                 }
                 if (e.getAction() == MotionEvent.ACTION_UP){
 
-                    pianoSounds.stop(soundClip);
+                    myPianoSounds.setVolume(myStreamId, 0.1f, 0.1f);
+                    new android.os.Handler().postDelayed(
+                            new Runnable() {
+                                public void run() {
+                                    myPianoSounds.stop(myStreamId);
+                                }
+                            },
+                            300);
                 }
 
                 return true;
