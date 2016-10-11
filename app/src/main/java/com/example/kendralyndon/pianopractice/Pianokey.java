@@ -6,6 +6,7 @@ package com.example.kendralyndon.pianopractice;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Rect;
 import android.media.SoundPool;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
@@ -22,6 +23,7 @@ public class Pianokey extends AppCompatActivity{
     private ImageView myKey;
     private int soundClip;
     private View.OnTouchListener myTouchListener;
+    private Rect rect;
 
 
     // empty constructor
@@ -42,14 +44,28 @@ public class Pianokey extends AppCompatActivity{
             @Override
             public boolean onTouch(View v, MotionEvent e){
 
-                System.out.println(e);
                 myKey.getParent().requestDisallowInterceptTouchEvent(true);
+                rect = new Rect(myKey.getLeft(), myKey.getTop(), myKey.getRight(), myKey.getBottom());
 
                 if(e.getAction() == MotionEvent.ACTION_DOWN){
 
                     myStreamId = myPianoSounds.play(soundClip, 1, 1, 1, 0, 1);
-
                 }
+
+                if(e.getAction() == MotionEvent.ACTION_MOVE){
+                    if(!rect.contains(v.getLeft() + (int) e.getX(), v.getTop() + (int) e.getY())){
+
+                        myPianoSounds.setVolume(myStreamId, 0.1f, 0.1f);
+                        new android.os.Handler().postDelayed(
+                                new Runnable() {
+                                    public void run() {
+                                        myPianoSounds.stop(myStreamId);
+                                    }
+                                },
+                                300);
+                    }
+                }
+
                 if (e.getAction() == MotionEvent.ACTION_UP){
 
                     myPianoSounds.setVolume(myStreamId, 0.1f, 0.1f);
