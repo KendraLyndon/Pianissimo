@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashLayout"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <!--android:background="@drawable/grand_piano_keyboard1"-->
+
+
+    <ImageView
+        android:background="@drawable/grand_piano_keyboard1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ImageView>
 
     <Button
         android:text="Start Playing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="167dp"
         android:id="@+id/launchButton"
-        android:background="#03FF98"
+        android:background="@drawable/mybutton"
+        android:textColor="#000000"
         android:padding="10dp"
+        android:radius="5dp"
         android:fontFamily="cursive"
         android:textAllCaps="false"
-        android:textSize="25sp" />
+        android:textSize="30sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:text="Pianissimo"
@@ -23,8 +34,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView"
         android:fontFamily="cursive"
-        android:textSize="80sp"
-        android:layout_above="@+id/launchButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="142dp" />
+        android:textColor="#09E8CC"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:textSize="85sp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -21,7 +21,7 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/octave8"
             android:layout_width="0dp"
-            android:layout_height="75dp"
+            android:layout_height="70dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -38,6 +38,20 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 android:layout_height="0dp"
                 android:contentDescription="c8Key" />
+            <TextView
+                android:id="@+id/c8Marker"
+                android:text="c8"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:rotation="-90"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:elevation="2dp"
+                />
 
         </android.support.constraint.ConstraintLayout>
 
@@ -45,7 +59,7 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/octave7"
             android:layout_width="0dp"
-            android:layout_height="530dp"
+            android:layout_height="490dp"
             app:layout_constraintTop_toBottomOf="@+id/octave8"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -133,6 +147,21 @@
                 android:layout_height="0dp"
                 android:contentDescription="c7Key"/>
 
+            <TextView
+                android:id="@+id/c7Marker"
+                android:text="c7"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:rotation="-90"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:elevation="2dp"
+                />
+
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -142,6 +171,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase7"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guidelineOct7_4"
+                android:elevation="5dp"
                 android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
                 android:contentDescription="aSharp7Key"/>
@@ -154,6 +184,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/key82"
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase7"
                 app:layout_constraintLeft_toLeftOf="parent"
+                android:elevation="5dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="13dp"
                 android:layout_marginBottom="12dp"
@@ -167,6 +198,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/guidelineOct7_3"
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase7"
                 app:layout_constraintLeft_toLeftOf="parent"
+                android:elevation="5dp"
                 android:layout_height="0dp"
                 android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
@@ -180,6 +212,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/key77"
                 app:layout_constraintRight_toLeftOf="@+id/guidelineBlackKeyBase7"
                 app:layout_constraintLeft_toLeftOf="parent"
+                android:elevation="5dp"
                 app:layout_constraintTop_toTopOf="@+id/guidelineOct7_2"
                 android:layout_marginBottom="13dp"
                 android:layout_marginTop="13dp"
@@ -249,7 +282,7 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/octave6"
             android:layout_width="0dp"
-            android:layout_height="530dp"
+            android:layout_height="490dp"
             app:layout_constraintTop_toBottomOf="@+id/octave7"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -336,6 +369,21 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_height="0dp"
                 android:contentDescription="c6Key"/>
+
+            <TextView
+                android:id="@+id/c6Marker"
+                android:text="c6"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:rotation="-90"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:elevation="2dp"
+                />
 
             <ImageView
                 android:layout_width="0dp"
@@ -453,7 +501,7 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/octave5"
             android:layout_width="0dp"
-            android:layout_height="530dp"
+            android:layout_height="490dp"
             app:layout_constraintTop_toBottomOf="@+id/octave6"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -540,6 +588,21 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_height="0dp"
                 android:contentDescription="c5Key"/>
+
+            <TextView
+                android:id="@+id/c5Marker"
+                android:text="c5"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:rotation="-90"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:elevation="2dp"
+                />
 
             <ImageView
                 android:layout_width="0dp"
@@ -657,7 +720,7 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/octave4"
             android:layout_width="0dp"
-            android:layout_height="530dp"
+            android:layout_height="490dp"
             app:layout_constraintTop_toBottomOf="@+id/octave5"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -734,7 +797,7 @@
                 android:contentDescription="d4Key"/>
 
             <ImageView
-                app:srcCompat="@drawable/blue_key"
+                app:srcCompat="@drawable/white_key"
                 android:id="@+id/key40"
                 app:layout_constraintTop_toBottomOf="@+id/key42"
                 app:layout_constraintRight_toRightOf="parent"
@@ -744,6 +807,21 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_width="0dp"
                 android:contentDescription="c4Key"/>
+
+            <TextView
+                android:id="@+id/c4Marker"
+                android:text="c4"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:rotation="-90"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:elevation="2dp"
+                />
 
             <ImageView
                 android:layout_width="0dp"
@@ -861,7 +939,7 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/octave3"
             android:layout_width="0dp"
-            android:layout_height="530dp"
+            android:layout_height="490dp"
             app:layout_constraintTop_toBottomOf="@+id/octave4"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -948,6 +1026,21 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_height="0dp"
                 android:contentDescription="c3Key"/>
+
+            <TextView
+                android:id="@+id/c3Marker"
+                android:text="c3"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:rotation="-90"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:elevation="2dp"
+                />
 
             <ImageView
                 android:layout_width="0dp"
@@ -1065,7 +1158,7 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/octave2"
             android:layout_width="0dp"
-            android:layout_height="530dp"
+            android:layout_height="490dp"
             app:layout_constraintTop_toBottomOf="@+id/octave3"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -1152,6 +1245,21 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_height="0dp"
                 android:contentDescription="c2Key"/>
+
+            <TextView
+                android:id="@+id/c2Marker"
+                android:text="c2"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:rotation="-90"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:elevation="2dp"
+                />
 
             <ImageView
                 android:layout_width="0dp"
@@ -1269,7 +1377,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/octave1"
         android:layout_width="0dp"
-        android:layout_height="530dp"
+        android:layout_height="490dp"
         app:layout_constraintTop_toBottomOf="@+id/octave2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -1356,6 +1464,22 @@
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_height="0dp"
             android:contentDescription="c1Key"/>
+
+
+            <TextView
+                android:id="@+id/c1Marker"
+                android:text="c1"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:rotation="-90"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:elevation="2dp"
+                />
 
             <ImageView
             android:layout_width="0dp"
@@ -1473,7 +1597,7 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/octave0"
             android:layout_width="0dp"
-            android:layout_height="150dp"
+            android:layout_height="135dp"
             app:layout_constraintTop_toBottomOf="@+id/octave1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -1543,6 +1667,25 @@
                 tools:layout_editor_absoluteX="247dp" />
 
         </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guidelineNoClick"
+            app:layout_constraintGuide_percent="0.2"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="247dp" />
+
+        <View
+            android:id="@+id/noPlaying"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:elevation="5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/guidelineNoClick"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
     </android.support.constraint.ConstraintLayout>
 

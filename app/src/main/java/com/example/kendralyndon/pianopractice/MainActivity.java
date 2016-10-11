@@ -3,8 +3,12 @@ package com.example.kendralyndon.pianopractice;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+
+    private View noPlay;
+    private View.OnClickListener myClickListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,13 +48,13 @@ public class MainActivity extends AppCompatActivity {
                 R.id.key78,R.id.key79,R.id.key80,R.id.key81,R.id.key82,R.id.key83,R.id.key84,
                 R.id.key85,R.id.key86,R.id.key87,R.id.key88};
 
-        SoundPool octave01Sounds = new SoundPool.Builder().setMaxStreams(15).build();
-        SoundPool octave2Sounds = new SoundPool.Builder().setMaxStreams(12).build();
-        SoundPool octave3Sounds = new SoundPool.Builder().setMaxStreams(12).build();
-        SoundPool octave4Sounds = new SoundPool.Builder().setMaxStreams(12).build();
-        SoundPool octave5Sounds = new SoundPool.Builder().setMaxStreams(12).build();
-        SoundPool octave6Sounds = new SoundPool.Builder().setMaxStreams(12).build();
-        SoundPool octave78Sounds = new SoundPool.Builder().setMaxStreams(13).build();
+        SoundPool octave01Sounds = new SoundPool.Builder().setMaxStreams(20).build();
+        SoundPool octave2Sounds = new SoundPool.Builder().setMaxStreams(20).build();
+        SoundPool octave3Sounds = new SoundPool.Builder().setMaxStreams(20).build();
+        SoundPool octave4Sounds = new SoundPool.Builder().setMaxStreams(20).build();
+        SoundPool octave5Sounds = new SoundPool.Builder().setMaxStreams(20).build();
+        SoundPool octave6Sounds = new SoundPool.Builder().setMaxStreams(20).build();
+        SoundPool octave78Sounds = new SoundPool.Builder().setMaxStreams(20).build();
 
         for (int i=0; i<15; i++){
 
@@ -80,6 +84,16 @@ public class MainActivity extends AppCompatActivity {
 
             Pianokey key = new Pianokey(this, this, soundfiles[i], viewids[i], octave78Sounds);
         }
-//        Pianokey key = new Pianokey(this, this, R.raw.note_ogg40, R.id.key40);
+
+        noPlay = findViewById(R.id.noPlaying);
+
+        myClickListener = new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+            }
+        };
+
+        noPlay.setOnClickListener(myClickListener);
+
     }
 }

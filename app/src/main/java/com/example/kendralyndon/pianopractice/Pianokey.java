@@ -43,6 +43,7 @@ public class Pianokey extends AppCompatActivity{
             public boolean onTouch(View v, MotionEvent e){
 
                 System.out.println(e);
+                myKey.getParent().requestDisallowInterceptTouchEvent(true);
 
                 if(e.getAction() == MotionEvent.ACTION_DOWN){
 
